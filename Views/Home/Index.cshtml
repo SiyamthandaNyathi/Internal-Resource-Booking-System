@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Hero Section -->
+<div class="position-relative overflow-hidden p-3 p-md-5 text-center bg-light" style="background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat; min-height: 400px;">
+    <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5);"></div>
+    <div class="position-relative text-white" style="z-index: 2;">
+        <h1 class="display-3 fw-bold mb-3">Welcome to the Internal Resource Booking System</h1>
+        <p class="lead mb-4">Easily manage, book, and track resources across your organization. Avoid conflicts, save time, and stay organized!</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a class="btn btn-primary btn-lg" asp-controller="Bookings" asp-action="Create">Book a Resource</a>
+            <a class="btn btn-outline-light btn-lg" asp-controller="Home" asp-action="Dashboard">View Dashboard</a>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Links Section -->
+<div class="container py-5">
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Resources</h5>
+                    <p class="card-text">Browse and manage all available resources.</p>
+                    <a class="btn btn-outline-primary" asp-controller="Resources" asp-action="Index">View Resources</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Bookings</h5>
+                    <p class="card-text">See all bookings, filter, and manage reservations.</p>
+                    <a class="btn btn-outline-primary" asp-controller="Bookings" asp-action="Index">View Bookings</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Dashboard</h5>
+                    <p class="card-text">Get a quick overview of today’s and upcoming bookings.</p>
+                    <a class="btn btn-outline-primary" asp-controller="Home" asp-action="Dashboard">Go to Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
