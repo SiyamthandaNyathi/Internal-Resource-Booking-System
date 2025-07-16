@@ -35,21 +35,22 @@ A web application for managing and booking shared company resources (meeting roo
    ```
    dotnet run --project ResourceBookingSystem
    ```
-   The app will be available at `https://localhost:5001` or `http://localhost:5000`.
+   The app will be available at `[https://localhost:5001](http://localhost:5214/)` or `http://localhost:5000`.
 
 ## Connecting to the Database
 - The database is a LocalDB `.mdf` file located in the project root as `ResourceBookingSystemDb.mdf`.
 - To view or edit the database, open SSMS and connect to `(localdb)\\mssqllocaldb`. Find `ResourceBookingSystemDb` under Databases.
 
-## Backing Up the Database
+##  Database
 1. **Stop the application** to ensure the database is not in use.
 2. **Copy the following files** to your backup location:
    - `ResourceBookingSystemDb.mdf`
    - `ResourceBookingSystemDb_log.ldf`
-3. (Optional) Use SSMS: Right-click the database > Tasks > Back Up...
+##  Database possible errors run
+   sqllocaldb info
+   sqllocaldb start mssqllocaldb
 
-## Screenshots
-Include screenshots of the running application here before submission.
+
 
 ## Contact
-For questions, contact [Your Name] at [your.email@example.com]. 
+For questions, contact 0786968342 at sidwellsiyamthanda17@gmail.com. 
